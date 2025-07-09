@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">Kolorowey</div>
+            <ul class="menu">
+                <li class="menu-heading active" data-page="dashboard">
+                    <span>Dashboard</span>
+                </li>
+                <li class="menu-heading">Create</li>
+                <li class="menu-item" data-page="partner">
+                    <span>Create Partner</span>
+                </li>
+                <li class="menu-item" data-page="publisher">
+                    <span>Create Publisher</span>
+                </li>
+                <li class="menu-item" data-page="unit">
+                    <span>Create Ad Unit</span>
+                </li>
+                <li class="menu-heading">List</li>
+                <li class="menu-item" data-page="partner-list">
+                    <span>Partner List</span>
+                </li>
+                <li class="menu-item" data-page="publisher-list">
+                    <span>Publisher List</span>
+                </li>
+                <li class="menu-item" data-page="unit-list">
+                    <span>Ad Unit List</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <!-- Page Content -->
+            <div class="page-content">
+                <div class="page active" id="dashboard">
+                    <h1>Dashboard</h1>
+                    <p>Welcome to your admin dashboard. Select a page from the sidebar.</p>
+                </div>
+
+                <div class="page" id="partner">
+                    <h1>Create Partner</h1>
+                    <p>This is the partner creation page.</p>
+                </div>
+
+                <div class="page" id="publisher">
+                    <h1>Create Publisher</h1>
+                    <p>This is the publisher creation page.</p>
+                </div>
+
+                <div class="page" id="unit">
+                    <h1>Create Ad Unit</h1>
+                    <p>This is the ad unit creation page.</p>
+                </div>
+
+                <div class="page" id="partner-list">
+                    <h1>Partner List</h1>
+                    <p>This is the partner list page.</p>
+                </div>
+
+                <div class="page" id="publisher-list">
+                    <h1>Publisher List</h1>
+                    <p>This is the publisher list page.</p>
+                </div>
+
+                <div class="page" id="unit-list">
+                    <h1>Ad Unit List</h1>
+                    <p>This is the ad unit list page.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
