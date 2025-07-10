@@ -1,86 +1,573 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <div class="logo">Kolorowey</div>
-            <ul class="menu">
-                <li class="menu-heading active" data-page="dashboard">
-                    <span>Dashboard</span>
-                </li>
-                <li class="menu-heading">Create</li>
-                <li class="menu-item" data-page="partner">
-                    <span>Create Partner</span>
-                </li>
-                <li class="menu-item" data-page="publisher">
-                    <span>Create Publisher</span>
-                </li>
-                <li class="menu-item" data-page="unit">
-                    <span>Create Ad Unit</span>
-                </li>
-                <li class="menu-heading">List</li>
-                <li class="menu-item" data-page="partner-list">
-                    <span>Partner List</span>
-                </li>
-                <li class="menu-item" data-page="publisher-list">
-                    <span>Publisher List</span>
-                </li>
-                <li class="menu-item" data-page="unit-list">
-                    <span>Ad Unit List</span>
-                </li>
-            </ul>
-        </div>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="logo">Kolorowey</div>
+        <ul class="menu">
+          <li class="menu-heading active" data-page="dashboard">
+            <span>Dashboard</span>
+          </li>
+          <li class="menu-heading">Create</li>
+          <li class="menu-item" data-page="partner">
+            <span>Create Partner</span>
+          </li>
+          <li class="menu-item" data-page="publisher">
+            <span>Create Publisher</span>
+          </li>
+          <li class="menu-item" data-page="unit">
+            <span>Create Ad Unit</span>
+          </li>
+          <li class="menu-heading">List</li>
+          <li class="menu-item" data-page="partner-list">
+            <span>Partner List</span>
+          </li>
+          <li class="menu-item" data-page="publisher-list">
+            <span>Publisher List</span>
+          </li>
+          <li class="menu-item" data-page="unit-list">
+            <span>Ad Unit List</span>
+          </li>
+        </ul>
+      </div>
 
-        <!-- Main Content -->
-        <div class="main-content">
-
-            <!-- Page Content -->
-            <div class="page-content">
-                <div class="page active" id="dashboard">
-                    <h1>Dashboard</h1>
-                    <p>Welcome to your admin dashboard. Select a page from the sidebar.</p>
-                </div>
-
-                <div class="page" id="partner">
-                    <h1>Create Partner</h1>
-                    <p>This is the partner creation page.</p>
-                </div>
-
-                <div class="page" id="publisher">
-                    <h1>Create Publisher</h1>
-                    <p>This is the publisher creation page.</p>
-                </div>
-
-                <div class="page" id="unit">
-                    <h1>Create Ad Unit</h1>
-                    <p>This is the ad unit creation page.</p>
-                </div>
-
-                <div class="page" id="partner-list">
-                    <h1>Partner List</h1>
-                    <p>This is the partner list page.</p>
-                </div>
-
-                <div class="page" id="publisher-list">
-                    <h1>Publisher List</h1>
-                    <p>This is the publisher list page.</p>
-                </div>
-
-                <div class="page" id="unit-list">
-                    <h1>Ad Unit List</h1>
-                    <p>This is the ad unit list page.</p>
-                </div>
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Page Content -->
+        <div class="page-content">
+          <div class="page active" id="dashboard">
+            <div class="page-section">
+              <div class="page-heading">Welcome to Kolorowey Dashboard</div>
+              <p>
+                Manage your publishers and monitor your ad network performance
+              </p>
             </div>
+            <div class="page-cards">
+              <div class="card">
+                <h3 class="text-secondary">Total Publishers</h3>
+                <div>24</div>
+                <p class="text-light">+12% from last month</p>
+              </div>
+              <div class="card">
+                <h3 class="text-secondary">Active Publishers</h3>
+                <div>18</div>
+                <p class="text-light">75% of total publishers</p>
+              </div>
+              <div class="card">
+                <h3 class="text-secondary">Monthly Revenue</h3>
+                <div>$12,847</div>
+                <p class="text-light">+8% from last month</p>
+              </div>
+              <div class="card">
+                <h3 class="text-secondary">Growth Rate</h3>
+                <div>23%</div>
+                <p class="text-light">Year over year</p>
+              </div>
+            </div>
+            <div class="lists">
+              <div class="list">
+                <h3 class="text-primary">Recent Activity</h3>
+                <p class="text-secondary">
+                  Latest publisher updates and system activity
+                </p>
+                <div class="inner-list blue-list">
+                  <div class="dot blue-dot"></div>
+                  <div>
+                    <p class="text-secondary">New publisher registered</p>
+                    <p class="text-light">TechNews.com - 2 hours ago</p>
+                  </div>
+                </div>
+                <div class="inner-list green-list">
+                  <div class="dot green-dot"></div>
+                  <div>
+                    <p class="text-secondary">Publisher activated</p>
+                    <p class="text-light">GameZone.net - 5 hours ago</p>
+                  </div>
+                </div>
+                <div class="inner-list orange-list">
+                  <div class="dot orange-dot"></div>
+                  <div>
+                    <p class="text-secondary">Payment processed</p>
+                    <p class="text-light">SportsBlog.io - 1 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="list">
+                <h3>System Status</h3>
+                <p>Current system health and performance metrics</p>
+                <div class="inner-list green-list">
+                  <p class="text-secondary flex">
+                    Ad Server
+                    <span class="text-light tag green-tag">Operational</span>
+                  </p>
+                </div>
+                <div class="inner-list green-list">
+                  <p class="text-secondary flex">
+                    Payment System
+                    <span class="text-light tag green-tag">Operational</span>
+                  </p>
+                </div>
+                <div class="inner-list blue-list">
+                  <p class="text-secondary flex">
+                    API Endpoint
+                    <span class="text-light tag blue-tag">99.9% Uptime</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="page" id="partner">
+            <div class="page-section">
+              <div class="page-heading">Create Partner</div>
+              <p>Add a new advertising partner to your network</p>
+            </div>
+            <div class="page-section">
+              <div class="form-heading">Partner Details</div>
+              <form action="" method="post">
+                <div class="flex">
+                  <div class="input-field">
+                    <label for="">Partner Name *</label>
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="Enter partner name"
+                    />
+                  </div>
+                  <div class="input-field">
+                    <label for="">Contact Email *</label>
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="partner@example.com"
+                    />
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="input-field">
+                    <label for="">Contact Phone</label>
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="Enter partner name"
+                    />
+                  </div>
+                  <div class="input-field">
+                    <label for="">Payment Term</label>
+                    <select name="" id="">
+                      <option value="">Select payment term</option>
+                      <option value="net7">Net 7</option>
+                      <option value="net15">Net 15</option>
+                      <option value="net30">Net 30</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <div class="input-field">
+                    <label for="">Status</label>
+                    <select name="" id="">
+                      <option value="active">Active</option>
+                      <option value="inactive">Inactive</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <button type="submit" class="btn">Create Partner</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="page" id="publisher">
+            <div class="page-section">
+              <div class="page-heading">Create Publisher</div>
+              <p>Add a new publisher to your ad network</p>
+            </div>
+            <div class="page-section">
+              <div class="form-heading">Publisher Information</div>
+              <form action="" method="post">
+                <div class="flex">
+                  <div class="input-field">
+                    <label for="">Select Partner *</label>
+                    <select name="" id="">
+                      <option value="">
+                        Choose a partner to associate with
+                      </option>
+                      <option value="net7">TechCorp(TC001)</option>
+                      <option value="net15">GameNet(GN002)</option>
+                      <option value="net30">SportMedia(SM003)</option>
+                    </select>
+                    <div class="text-light">
+                      This publisher will be associated with the selected
+                      partner
+                    </div>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="input-field">
+                    <label for="">Publisher Name *</label>
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="Enter publisher name"
+                    />
+                  </div>
+                  <div class="input-field">
+                    <label for="">Publisher ID</label>
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="Enter publisher ID (optional)"
+                    />
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="input-field">
+                    <label for="">Email</label>
+                    <input
+                      type="email"
+                      name=""
+                      placeholder="Enter email address"
+                    />
+                  </div>
+                  <div class="input-field">
+                    <label for="">Domain</label>
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="Enter domain (e.g., example.com)"
+                    />
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="input-field">
+                    <label for="">Status</label>
+                    <select name="" id="">
+                      <option value="active">Active</option>
+                      <option value="inactive">Inactive</option>
+                    </select>
+                  </div>
+                  <div class="input-field">
+                    <label for="">Payment Term</label>
+                    <select name="" id="">
+                      <option value="">Select payment term</option>
+                      <option value="net7">Net 7</option>
+                      <option value="net15">Net 15</option>
+                      <option value="net30">Net 30</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="input-field">
+                    <label for="">Payment Method</label>
+                    <select name="" id="">
+                      <option value="">Select payment method</option>
+                      <option value="net7">PayPal</option>
+                      <option value="net15">Bank Transfer</option>
+                      <option value="net30">UPI</option>
+                    </select>
+                  </div>
+                  <div class="input-field">
+                    <label for="">RevShare (%)</label>
+                    <input
+                      type="number"
+                      name=""
+                      placeholder="Enter revenue share percentage"
+                    />
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="input-field">
+                    <label for="">Minimum Threshold ($)</label>
+                    <input
+                      type="number"
+                      name=""
+                      placeholder="Enter minimum threshold"
+                    />
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="input-field">
+                    <label for="">Live Date</label>
+                    <input type="date" name="" placeholder="mm/dd/yyyy" />
+                  </div>
+                  <div class="input-field">
+                    <label for="">End Date</label>
+                    <input type="date" name="" placeholder="mm/dd/yyyy" />
+                  </div>
+                </div>
+                <div class="input-field">
+                  <label for="">Ad Formats</label>
+                  <div class="flex checkbox">
+                    <div><input type="checkbox" name="" id="" />Banner</div>
+                    <div><input type="checkbox" name="" id="" />Native</div>
+                    <div>
+                      <input type="checkbox" name="" id="" />Interstitial
+                    </div>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <button type="submit" class="btn">Create Publisher</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="page" id="unit">
+            <div class="page-section">
+              <div class="page-heading">Create Ad Unit</div>
+              <p>Configure a new advertising unit for your network</p>
+            </div>
+            <div class="page-section">
+              <div class="form-heading">Ad Unit Configuration</div>
+              <form action="" method="post">
+                <div class="form-sub-heading text-primary">Ad Details</div>
+                <div class="flex">
+                  <div class="input-field">
+                    <label for="">Ad Unit Name *</label>
+                    <input
+                      type="number"
+                      name=""
+                      placeholder="Enter ad unit name"
+                    />
+                  </div>
+                  <div class="input-field">
+                    <label for="">Ad Format *</label>
+                    <select name="" id="">
+                      <option value="">Select ad format</option>
+                      <option value="net7">Banner</option>
+                      <option value="net15">Interstitial</option>
+                      <option value="net30">Native</option>
+                      <option value="net30">Video</option>
+                      <option value="net30">Rewarded Video</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="input-field">
+                    <label for="">Ad Size *</label>
+                    <select name="" id="">
+                      <option value="">Select ad size</option>
+                      <option value="net7">300x250</option>
+                      <option value="net15">728x90</option>
+                      <option value="net30">320x50</option>
+                      <option value="net30">468x60</option>
+                      <option value="net30">970x250</option>
+                      <option value="net30">160x600</option>
+                    </select>
+                  </div>
+                  <div class="input-field">
+                    <label for="">Platform *</label>
+                    <select name="" id="">
+                      <option value="">Select platform</option>
+                      <option value="net7">Android</option>
+                      <option value="net15">iOS</option>
+                      <option value="net30">Web</option>
+                      <option value="net30">Desktop</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-sub-heading text-primary">Associations</div>
+                <div class="flex">
+                  <div class="input-field">
+                    <label for="">Partner Name *</label>
+                    <select name="" id="">
+                      <option value="">Select partner</option>
+                      <option value="net7">Google AdMob</option>
+                      <option value="net15">Facebook Audience Network</option>
+                      <option value="net30">Unit Ads</option>
+                      <option value="net30">AppLovin</option>
+                    </select>
+                  </div>
+                  <div class="input-field">
+                    <label for="">Publisher Name *</label>
+                    <select name="" id="">
+                      <option value="">Select publisher</option>
+                      <option value="net7">Mobile Game Studio</option>
+                      <option value="net15">News App Inc</option>
+                      <option value="net30">Social Media Platform</option>
+                      <option value="net30">E-commerce Store</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-sub-heading text-primary">Configuration</div>
+                <div>
+                  <div class="input-field">
+                    <label for="">Status</label>
+                    <select name="" id="">
+                      <option value="active">Active</option>
+                      <option value="inactive">Inactive</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <button type="submit" class="btn">Create Ad Unit</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="page" id="partner-list">
+            <div class="page-section">
+              <div class="page-heading">All Partners</div>
+              <p>Manage and monitor your partner network</p>
+            </div>
+            <div class="page-section">
+              <div class="text-primary">Search Partners</div>
+              <div class="input-field">
+                <input type="text" name="" placeholder="Search partners" />
+              </div>
+            </div>
+            <div class="table">
+              <table>
+                <tr>
+                  <th>Partner</th>
+                  <th>Partner ID</th>
+                  <th>Contact</th>
+                  <th>Status</th>
+                  <th>Publishers</th>
+                  <th>Ad Units</th>
+                  <th>Actions</th>
+                </tr>
+                <tr>
+                  <td>TechCorp</td>
+                  <td>TC001</td>
+                  <td>admin@techcorp.com</td>
+                  <td class="tag green-tag">Active</td>
+                  <td>3</td>
+                  <td>12</td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="page" id="publisher-list">
+            <div class="page-section">
+              <div class="page-heading">All Publishers</div>
+              <p>Manage and monitor your publisher network</p>
+            </div>
+            <div class="page-section">
+              <div class="text-primary">Search & Filters</div>
+              <div class="flex gap">
+                <div class="input-field">
+                  <input type="text" name="" placeholder="Search publishers" />
+                </div>
+                <div class="input-field">
+                  <select name="" id="">
+                    <option value="">All Status</option>
+                    <option value="active">Active</option>
+                    <option value="inactive">Inactive</option>
+                  </select>
+                </div>
+                <div class="input-field">
+                  <select name="" id="">
+                    <option value="">All Methods</option>
+                    <option value="net7">PayPal</option>
+                    <option value="net15">Bank Transfer</option>
+                    <option value="net30">UPI</option>
+                  </select>
+                </div>
+                <div class="input-field">
+                  <select name="" id="">
+                    <option value="">All Formats</option>
+                    <option value="net7">Banner</option>
+                    <option value="net30">Native</option>
+                    <option value="net15">Interstitial</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="table">
+              <table>
+                <tr>
+                  <th>Partner</th>
+                  <th>Email</th>
+                  <th>Domain</th>
+                  <th>Status</th>
+                  <th>RevShare</th>
+                  <th>Live Date</th>
+                  <th>End Date</th>
+                  <th>Actions</th>
+                </tr>
+                <tr>
+                  <td>TechCorp</td>
+                  <td>admin@techcorp.com</td>
+                  <td>technews.com</td>
+                  <td class="tag green-tag">Active</td>
+                  <td>
+                    70% <br />
+                    <div class="text-secondary">$100 min</div>
+                  </td>
+                  <td>2024-01-15</td>
+                  <td>2024-12-31</td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="page" id="unit-list">
+            <div class="page-section">
+              <div class="page-heading">All Ad Units</div>
+              <p>Manage and monitor ad unit performance</p>
+            </div>
+            <div class="page-section">
+              <div class="text-primary">Search & Filters</div>
+              <div class="flex gap">
+                <div class="input-field">
+                  <input type="text" name="" placeholder="Search publishers" />
+                </div>
+                <div class="input-field">
+                  <select name="" id="">
+                    <option value="">All Status</option>
+                    <option value="active">Active</option>
+                    <option value="inactive">Inactive</option>
+                  </select>
+                </div>
+                <div class="input-field">
+                  <select name="" id="">
+                    <option value="">All Formats</option>
+                    <option value="net7">Banner</option>
+                    <option value="net30">Native</option>
+                    <option value="net15">Interstitial</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="table">
+              <table>
+                <tr>
+                  <th>Ad Unit Name</th>
+                  <th>Partner</th>
+                  <th>Publisher</th>
+                  <th>Format</th>
+                  <th>Size</th>
+                  <th>Platform</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+                <tr>
+                  <td>Mobile Interstitial</td>
+                  <td>Google</td>
+                  <td>YouTube</td>
+                  <td class="tag green-tag">Interstitial</td>
+                  <td>320x480</td>
+                  <td>Android</td>
+                  <td class="tag green-tag">Active</td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
