@@ -13,28 +13,50 @@
         <div class="sidebar">
           <div class="logo">Kolorowey</div>
           <ul class="menu">
-            <li class="menu-item active" data-page="dashboard">
-              <span>Dashboard</span>
+            <li class="menu-item dashboard active" data-page="dashboard">
+              <img src="/assets/home.png" alt="dashboard" />
+              Dashboard
             </li>
-            <li class="menu-heading">Create</li>
-            <li class="menu-item" data-page="partner">
-              <span>Create Partner</span>
+            <li class="menu-dropdown">
+              <div class="menu-heading">
+                <img src="/assets/create.png" alt="create" />
+                <span>Create</span>
+                <span class="dropdown-arrow">></span>
+              </div>
+              <ul class="dropdown-content">
+                <li class="menu-item" data-page="partner">
+                  <span>Create Partner</span>
+                </li>
+                <li class="menu-item" data-page="publisher">
+                  <span>Create Publisher</span>
+                </li>
+                <li class="menu-item" data-page="unit">
+                  <span>Create Ad Unit</span>
+                </li>
+              </ul>
             </li>
-            <li class="menu-item" data-page="publisher">
-              <span>Create Publisher</span>
+            <li class="menu-dropdown">
+              <div class="menu-heading">
+                <img src="/assets/list.png" alt="list" />
+                <span>List</span>
+                <span class="dropdown-arrow">></span>
+              </div>
+              <ul class="dropdown-content">
+                <li class="menu-item" data-page="partner-list">
+                  <span>Partner List</span>
+                </li>
+                <li class="menu-item" data-page="publisher-list">
+                  <span>Publisher List</span>
+                </li>
+                <li class="menu-item" data-page="unit-list">
+                  <span>Ad Unit List</span>
+                </li>
+              </ul>
             </li>
-            <li class="menu-item" data-page="unit">
-              <span>Create Ad Unit</span>
-            </li>
-            <li class="menu-heading">List</li>
-            <li class="menu-item" data-page="partner-list">
-              <span>Partner List</span>
-            </li>
-            <li class="menu-item" data-page="publisher-list">
-              <span>Publisher List</span>
-            </li>
-            <li class="menu-item" data-page="unit-list">
-              <span>Ad Unit List</span>
+            <li>
+              <div class="menu-heading logout">
+                <img src="/assets/logout.png" alt="" />Logout
+              </div>
             </li>
           </ul>
         </div>
@@ -53,22 +75,34 @@
             </div>
             <div class="page-cards">
               <div class="card">
-                <h3 class="text-secondary">Total Publishers</h3>
+                <div class="flex">
+                  <h3 class="text-secondary">Total Publishers</h3>
+                  <img src="/assets/user.png" alt="user" class="card-blue" />
+                </div>
                 <div>24</div>
                 <p class="text-light">+12% from last month</p>
               </div>
               <div class="card">
-                <h3 class="text-secondary">Active Publishers</h3>
+                <div class="flex">
+                  <h3 class="text-secondary">Active Publishers</h3>
+                  <img src="/assets/shock.png" alt="shock" class="card-green" />
+                </div>
                 <div>18</div>
                 <p class="text-light">75% of total publishers</p>
               </div>
               <div class="card">
-                <h3 class="text-secondary">Monthly Revenue</h3>
+                <div class="flex">
+                  <h3 class="text-secondary">Monthly Revenue</h3>
+                  <img src="/assets/dollar.png" alt="dollar" class="card-red" />
+                </div>
                 <div>$12,847</div>
                 <p class="text-light">+8% from last month</p>
               </div>
               <div class="card">
-                <h3 class="text-secondary">Growth Rate</h3>
+                <div class="flex">
+                  <h3 class="text-secondary">Growth Rate</h3>
+                  <img src="/assets/rate.png" alt="rate" class="card-yellow" />
+                </div>
                 <div>23%</div>
                 <p class="text-light">Year over year</p>
               </div>
@@ -442,7 +476,14 @@
                   <td><h3 class="tag green-tag">Active</h3></td>
                   <td>3</td>
                   <td>12</td>
-                  <td></td>
+                  <td>
+                    <button class="btn-secondary btn-blue text-secondary">
+                      Publishers
+                    </button>
+                    <button class="btn-secondary btn-green text-secondary">
+                      Ad Units
+                    </button>
+                  </td>
                 </tr>
               </table>
             </div>
@@ -500,14 +541,41 @@
                   <td>TechCorp</td>
                   <td>admin@techcorp.com</td>
                   <td>technews.com</td>
-                  <td class="tag green-tag">Active</td>
+                  <td><h3 class="tag green-tag">Active</h3></td>
                   <td>
                     70% <br />
-                    <div class="text-secondary">$100 min</div>
+                    <div class="text-light">$100 min</div>
                   </td>
                   <td>2024-01-15</td>
                   <td>2024-12-31</td>
-                  <td></td>
+                  <td>
+                    <button class="btn-secondary btn-blue text-secondary">
+                      Publishers
+                    </button>
+                    <button class="btn-secondary btn-green text-secondary">
+                      Ad Units
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>TechCorp</td>
+                  <td>admin@techcorp.com</td>
+                  <td>technews.com</td>
+                  <td><h3 class="tag green-tag">Active</h3></td>
+                  <td>
+                    70% <br />
+                    <div class="text-light">$100 min</div>
+                  </td>
+                  <td>2024-01-15</td>
+                  <td>2024-12-31</td>
+                  <td>
+                    <button class="btn-secondary btn-blue text-secondary">
+                      Publishers
+                    </button>
+                    <button class="btn-secondary btn-green text-secondary">
+                      Ad Units
+                    </button>
+                  </td>
                 </tr>
               </table>
             </div>
@@ -557,11 +625,18 @@
                   <td>Mobile Interstitial</td>
                   <td>Google</td>
                   <td>YouTube</td>
-                  <td class="tag green-tag">Interstitial</td>
+                  <td><h3 class="tag green-tag">Interstitial</h3></td>
                   <td>320x480</td>
                   <td>Android</td>
-                  <td class="tag green-tag">Active</td>
-                  <td></td>
+                  <td><h3 class="tag green-tag">Active</h3></td>
+                  <td>
+                    <button class="btn-secondary btn-blue text-secondary">
+                      Publishers
+                    </button>
+                    <button class="btn-secondary btn-green text-secondary">
+                      Ad Units
+                    </button>
+                  </td>
                 </tr>
               </table>
             </div>

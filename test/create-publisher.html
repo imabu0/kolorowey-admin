@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Publisher | Kolorowey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar-container">
+          <div class="sidebar">
+            <div class="logo">Kolorowey</div>
+            <ul class="menu">
+              <li class="menu-item dashboard active" data-page="dashboard">
+                <a href="#dashboard.html">
+                  <img src="/assets/home.png" alt="dashboard" />
+                  Dashboard
+                </a>
+              </li>
+              <li class="menu-dropdown">
+                <div class="menu-heading">
+                  <img src="/assets/create.png" alt="create" />
+                  <span>Create</span>
+                  <span class="dropdown-arrow">></span>
+                </div>
+                <ul class="dropdown-content">
+                  <li class="menu-item" data-page="partner">
+                    <a href="#create-partner.html"><span>Create Partner</span></a>
+                  </li>
+                  <li class="menu-item" data-page="publisher">
+                    <a href="#create-publisher.html"
+                      ><span>Create Publisher</span></a
+                    >
+                  </li>
+                  <li class="menu-item" data-page="unit">
+                    <a href="#create-unit.html"><span>Create Ad Unit</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-dropdown">
+                <div class="menu-heading">
+                  <img src="/assets/list.png" alt="list" />
+                  <span>List</span>
+                  <span class="dropdown-arrow">></span>
+                </div>
+                <ul class="dropdown-content">
+                  <li class="menu-item" data-page="partner-list">
+                    <a href="#partner-list.html"><span>Partner List</span></a>
+                  </li>
+                  <li class="menu-item" data-page="publisher-list">
+                    <a href="#publisher-list.html"><span>Publisher List</span></a>
+                  </li>
+                  <li class="menu-item" data-page="unit-list">
+                    <a href="#unit-list.html"><span>Ad Unit List</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="menu-heading logout">
+                  <img src="/assets/logout.png" alt="logout" />Logout
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Main Content -->
+        <div class="main-content">
+          <!-- Page Content -->
+          <div class="page-content">
+            <div class="page active" id="dashboard">
+              <div class="page-section">
+                <div class="page-heading">Welcome to Kolorowey Dashboard</div>
+                <p>
+                  Manage your publishers and monitor your ad network performance
+                </p>
+              </div>
+              <div class="page-cards">
+                <div class="card">
+                  <h3 class="text-secondary">Total Publishers</h3>
+                  <div>24</div>
+                  <p class="text-light">+12% from last month</p>
+                </div>
+                <div class="card">
+                  <h3 class="text-secondary">Active Publishers</h3>
+                  <div>18</div>
+                  <p class="text-light">75% of total publishers</p>
+                </div>
+                <div class="card">
+                  <h3 class="text-secondary">Monthly Revenue</h3>
+                  <div>$12,847</div>
+                  <p class="text-light">+8% from last month</p>
+                </div>
+                <div class="card">
+                  <h3 class="text-secondary">Growth Rate</h3>
+                  <div>23%</div>
+                  <p class="text-light">Year over year</p>
+                </div>
+              </div>
+              <div class="lists">
+                <div class="list">
+                  <h3 class="text-primary">Recent Activity</h3>
+                  <p class="text-secondary">
+                    Latest publisher updates and system activity
+                  </p>
+                  <div class="inner-list blue-list">
+                    <div class="dot blue-dot"></div>
+                    <div>
+                      <p class="text-secondary">New publisher registered</p>
+                      <p class="text-light">TechNews.com - 2 hours ago</p>
+                    </div>
+                  </div>
+                  <div class="inner-list green-list">
+                    <div class="dot green-dot"></div>
+                    <div>
+                      <p class="text-secondary">Publisher activated</p>
+                      <p class="text-light">GameZone.net - 5 hours ago</p>
+                    </div>
+                  </div>
+                  <div class="inner-list orange-list">
+                    <div class="dot orange-dot"></div>
+                    <div>
+                      <p class="text-secondary">Payment processed</p>
+                      <p class="text-light">SportsBlog.io - 1 day ago</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="list">
+                  <h3>System Status</h3>
+                  <p>Current system health and performance metrics</p>
+                  <div class="inner-list green-list">
+                    <p class="text-secondary flex">
+                      Ad Server
+                      <span class="text-light tag green-tag">Operational</span>
+                    </p>
+                  </div>
+                  <div class="inner-list green-list">
+                    <p class="text-secondary flex">
+                      Payment System
+                      <span class="text-light tag green-tag">Operational</span>
+                    </p>
+                  </div>
+                  <div class="inner-list blue-list">
+                    <p class="text-secondary flex">
+                      API Endpoint
+                      <span class="text-light tag blue-tag">99.9% Uptime</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
